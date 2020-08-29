@@ -1,8 +1,15 @@
 import React from 'react'
+import Register from './components/authentication/Register'
+import Hero from './components/common/Hero'
+import Footer from './components/common/Footer'
 
 const App = () => {
   return (
-    <h1>Hello World</h1>
+    <>
+      <Hero />
+      <Register />
+      <Footer />
+    </>
   )
 }
 

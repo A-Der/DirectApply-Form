@@ -1,0 +1,96 @@
+*{
+  margin: 0 auto;
+  font-family: 'Lexend Peta', sans-serif;
+}
+
+.hero{
+  background-color: rgba(255,160,122,1);
+  width: 100%;
+  height: 20em;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+
+  .hero-title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    .title{
+      font-size: 45px;
+    }
+    .subtitle{
+      font-size: 17px;
+    }
+  }
+}
+
+.section {
+  background-color: rgb(255, 239, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+
+  .register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    .error-help{
+      color: red;
+      font-size: 10px;
+    }
+
+    .input-field{
+      margin: 15px 0 15px 0;
+      input{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey
+      }
+      .custom-icon{
+        position: absolute;
+        margin-left: 10px;
+      }
+      .submit-button{
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid rgba(255,160,122,1);
+        background-color: rgba(255,160,122,0.6);
+      }
+    }
+  }
+}
+
+.footer{
+  display: flex;
+  background-color: black;
+  color: whitesmoke;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .hero-title{
+    .title{
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .subtitle{
+      font-size: 13px;
+      text-align: center;
+    }
+  }
+}
+
+.register-form{
+  margin: 0 25px 0 25px;
+}
+}
